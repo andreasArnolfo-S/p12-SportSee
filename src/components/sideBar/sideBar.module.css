@@ -1,0 +1,41 @@
+.SideBar {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 7%;
+     height: 1200px;
+     background-color: #020203;
+     padding: 20px;
+     box-sizing: border-box;
+     justify-content: center;
+     position: relative;
+}
+.SideMenu {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+}
+
+.SideMenuIcon {
+     background-color: #fff;
+     width: 80px;
+     height: 80px;
+     border-radius: 5px;
+     font-size: 4rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #FF0101;
+     cursor: pointer;
+}
+.copyRight {
+     position: absolute;
+     bottom: 130px;
+     color: #fff;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 20px;
+     transform: rotate(-90deg);
+     white-space: nowrap;
+}

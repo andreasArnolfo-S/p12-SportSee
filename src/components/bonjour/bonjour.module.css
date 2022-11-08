@@ -1,0 +1,13 @@
+.Bonjour {
+     width: 100%;
+     margin-left: 5%;
+}
+.Bonjour h1 {
+     font-size: 48px;
+}
+.Bonjour p {
+     font-size: 24px;
+}
+.firstname {
+	color: red;
+}
