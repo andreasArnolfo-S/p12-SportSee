@@ -1,40 +1,62 @@
-import { useParams } from 'react-router-dom';
-import Charts from '../components/charts/charts';
-import UseGetDureation from '../Hooks/getDuration';
-import UseGetInfos from '../Hooks/getInfos';
-import UseGetPerformancesKind from '../Hooks/getKind';
-import UseGetPerformances from '../Hooks/getPerformances';
-import Bonjour from './../components/bonjour/bonjour';
-import Navbar from './../components/navbar/navbar';
-import SideBar from './../components/sideBar/sideBar';
-import UseGetActivities from './../Hooks/getActivity';
+import ActivityChart from '../components/activityChart/activityChart';
+import Hello from '../components/hello/hello';
+import Navbar from '../components/navbar/navbar';
+import styles from './dashboard.module.css';
+import DurationChart from './../components/durationChart/durationChart';
+import Sidebar from './../components/sidebar/sidebar';
+import PerformanceChart from '../components/performanceChart/performanceChart';
+import KeyData from './../models/keyData';
+import Card from './../components/card/card';
+import { FaFire, FaDrumstickBite, FaApple, FaHamburger } from 'react-icons/fa';
+import ScoreChart from './../components/scoreChart/scoreChart';
+
+
 
 const dashboard = () => {
-     
-     /* Getting the id from the url and using it to get the data from the api. */
-     // eslint-disable-next-line react-hooks/rules-of-hooks
-     const userId = useParams().id;
-     const data = UseGetInfos(`http://localhost:3000/user/${userId}`);
 
-     const activities = UseGetActivities(`http://localhost:3000/user/${userId}/activity`);
-     const performances = UseGetPerformances(`http://localhost:3000/user/${userId}/performance`);
-     const performancesKind = UseGetPerformancesKind(`http://localhost:3000/user/${userId}/performance`);
-     const duration = UseGetDureation(`http://localhost:3000/user/${userId}/average-sessions`);
-          
+     const keyData = KeyData();
+     console.log(keyData);
+
 
      return (
           <>
                <Navbar />
-               <div style={{display: 'flex'}}>
-                    <SideBar />
-                    <div>
-                         <Bonjour firstname={data?.firstName} />
-                         <Charts activity={activities} performances={performances} kind={performancesKind} duration={duration}/>
+               <div className={styles.main}>
+                    <Sidebar />
+                    <div className={styles.mainContainer}>
+                         <Hello />
+
+                         <section className={styles.chartSection}>
+                              <div className={styles.div1}>
+                                   <ActivityChart />
+                              </div>
+                              <div className={styles.div2}>
+                                   <DurationChart />
+                              </div>
+                              <div className={styles.div3}>
+                                   <PerformanceChart />
+                              </div>
+                              <div className={styles.div4}>
+                                   <ScoreChart />
+                              </div>
+                              <div className={styles.div5}>
+                              <Card value={keyData?.lipidCount} unit='g' title='Lipides' icon={<FaHamburger />} bgColor='#fa749a46' color='#FD5181' />
+                              </div>
+                              <div className={styles.div6}>
+                              <Card value={keyData?.carbohydrateCount} unit='g' title='Glucides' icon={<FaApple />} bgColor='#fadc6454' color='#FDCC0C' />
+                              </div>
+                              <div className={styles.div7}>
+                                   <Card value={keyData?.proteinCount} unit='g' title='Proteines' icon={<FaDrumstickBite />} bgColor='#7acaff44' color='#4AB8FF' />
+                              </div>
+                              <div className={styles.div8}>
+                                   <Card value={keyData?.calorieCount} unit='kCal' title='Calories' icon={<FaFire />} bgColor='#ff5d5d49' color='#FF0000'/>
+                              </div>
+                         </section>
                     </div>
                </div>
 
           </>
      );
-}; 
+};
 
 export default dashboard;

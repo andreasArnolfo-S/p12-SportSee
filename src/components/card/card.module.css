@@ -1,0 +1,15 @@
+.Card {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background: #FBFBFB;
+     border-radius: 5px;
+     width: 100%;
+     height: 100%;
+}
+
+.icon {
+     font-size: 2rem;
+     padding: 1rem 1.5rem 1rem 1.5rem;
+     border-radius: 5px;
+}

@@ -1,0 +1,7 @@
+.helpText {
+     font-size: 10px;
+     transform: translateY(12px);
+}
+.helpText::nth-child(2) {
+     color: #FF0101;
+}

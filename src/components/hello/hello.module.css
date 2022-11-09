@@ -1,13 +1,9 @@
 .Bonjour {
      width: 100%;
+     text-align: left;
      margin-left: 5%;
 }
-.Bonjour h1 {
-     font-size: 48px;
-}
-.Bonjour p {
-     font-size: 24px;
-}
+
 .firstname {
 	color: red;
 }

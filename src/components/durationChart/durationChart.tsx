@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styles from './durationChart.module.css';
+import Duration from './../../models/duration';
 import {
   XAxis,
   YAxis,
@@ -9,25 +10,25 @@ import {
   Area,
 } from 'recharts';
 
-interface DurationChartProps {
-  duration: [];
-}
+interface DurationChartProps { }
 
-const DurationChart: FC<DurationChartProps> = (props) => {
+const DurationChart: FC<DurationChartProps> = () => {
+  const duration = Duration();
 
   return (
-    <ResponsiveContainer width="30%" height="40%" className={styles.chartContainer}>
+    <ResponsiveContainer width="100%" height="100%" className={styles.chartContainer}>
       <AreaChart
         width={500}
         height={400}
-        data={props.duration}
+        data={duration}
         margin={{
           top: 10,
           right: 10,
-          left: 10,
+          left: 0,
           bottom: 0,
         }}
       >
+        <YAxis dataKey='sessionLength' visibility='hidden' />
         <XAxis dataKey="day" />
         <Tooltip />
         <Area type="monotone" dataKey="sessionLength" stroke="#ffff" strokeWidth={3} fill="transparent" />

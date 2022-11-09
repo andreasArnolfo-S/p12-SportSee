@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import styles from './sideBar.module.css';
+import styles from './sidebar.module.css';
 import { GiMeditation } from "react-icons/gi";
 
-interface SideBarProps {}
+interface SidebarProps {}
 
-const SideBar: FC<SideBarProps> = () => (
+const Sidebar: FC<SidebarProps> = () => (
   <div className={styles.SideBar}>
     <div className={styles.SideMenu}>
       <div className={styles.SideMenuIcon}>
@@ -24,4 +24,4 @@ const SideBar: FC<SideBarProps> = () => (
   </div>
 );
 
-export default SideBar;
+export default Sidebar;

@@ -4,6 +4,7 @@
      align-items: center;
      width: 7%;
      height: 1200px;
+     min-height: 670px;
      background-color: #020203;
      padding: 20px;
      box-sizing: border-box;
@@ -19,10 +20,10 @@
 
 .SideMenuIcon {
      background-color: #fff;
-     width: 80px;
-     height: 80px;
+     width: 50px;
+     height: 50px;
      border-radius: 5px;
-     font-size: 4rem;
+     font-size: 3rem;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -31,9 +32,9 @@
 }
 .copyRight {
      position: absolute;
-     bottom: 130px;
+     bottom: 80px;
      color: #fff;
-     font-size: 1rem;
+     font-size: .8rem;
      font-weight: 600;
      margin-bottom: 20px;
      transform: rotate(-90deg);
