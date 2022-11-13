@@ -5,3 +5,7 @@
 .helpText::nth-child(2) {
      color: #FF0101;
 }
+.chartContainer {
+     background-color: #FBFBFB;
+     border-radius: 10px;
+}

@@ -9,13 +9,30 @@ interface PerformanceChartProps { }
 const PerformanceChart: FC<PerformanceChartProps> = () => {
   const data = Performances();
   return (
-    <ResponsiveContainer width="100%" height="100%" className={styles.chartContainer}>
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey='kind' tick={{ fill: 'white' }} tickLine={{ stroke: 'white' }} />
-        <Radar name="performances" dataKey='value' stroke="#FF0000" fill="#FF0000" fillOpacity={0.6} />
-      </RadarChart>
-    </ResponsiveContainer>
+    <ResponsiveContainer width="100%" height="100%">
+    <RadarChart
+      cx="50%"
+      cy="50%"
+      outerRadius="60%"
+      data={data}
+      style={{ backgroundColor: '#282D30' }}
+    >
+      <PolarGrid stroke="white" />
+      <PolarAngleAxis
+        stroke="white"
+        dataKey="kind"
+        tick={{ fontSize: '15px' }}
+        tickLine={false}
+      />
+      <Radar
+        name="Performance"
+        dataKey="value"
+        stroke="#e60000"
+        fill="#e60000"
+        fillOpacity={0.6}
+      />
+    </RadarChart>
+  </ResponsiveContainer>
   );
 }
 
