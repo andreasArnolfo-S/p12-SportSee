@@ -15,11 +15,10 @@ import ScoreChart from './../components/scoreChart/scoreChart';
 const dashboard = () => {
 
      const keyData = KeyData();
-     console.log(keyData);
 
 
      return (
-          <>
+          <div className={styles.dashboard}>
                <Navbar />
                <div className={styles.main}>
                     <Sidebar />
@@ -55,7 +54,7 @@ const dashboard = () => {
                     </div>
                </div>
 
-          </>
+          </div>
      );
 };
 

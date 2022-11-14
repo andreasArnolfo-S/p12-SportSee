@@ -15,7 +15,7 @@ const PerformanceChart: FC<PerformanceChartProps> = () => {
       cy="50%"
       outerRadius="60%"
       data={data}
-      style={{ backgroundColor: '#282D30' }}
+      className={styles.chartContainer}	
     >
       <PolarGrid stroke="white" />
       <PolarAngleAxis

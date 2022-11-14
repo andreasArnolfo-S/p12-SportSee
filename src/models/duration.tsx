@@ -9,6 +9,11 @@ const Duration = () => {
 
      const sessions = data.data?.sessions;
 
+     /**
+      * It takes a number and returns a string.
+      * @param {number} item - number - the number to be translated
+      * @returns The function translate is being returned.
+      */
      const translate: any = (item: number) => {
           switch (item) {
                case 1:
@@ -30,8 +35,7 @@ const Duration = () => {
           }
      };
 
-
-
+     /* Mapping the data from the API to a new array. */
      let newData = sessions?.map((session) => {
           return {
                day: translate(session.day),

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useGetPerformances, useGetPerformancesKind } from '../api/api';
 import { ApiResponsePerformance } from '../api/types';
 
+
 const Performances = () => {
      const userId = useParams().id;
      const data: ApiResponsePerformance = useGetPerformances(`http://localhost:3000/user/${userId}/performance`);

@@ -2,6 +2,10 @@ import { useGetUserInfos } from "../api/api";
 import { useParams } from 'react-router-dom';
 import { useState } from "react";
 
+/**
+ * It's a function that returns a promise that returns an object.
+ * @returns The key object.
+ */
 const KeyData = () => {
      const userId = useParams().id;
      const data = useGetUserInfos(`http://localhost:3000/user/${userId}`);

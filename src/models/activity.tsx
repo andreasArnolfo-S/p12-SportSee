@@ -9,6 +9,7 @@ const Activity = () => {
 
      const sessions  = data.sessions;
 
+     /* Mapping the data from the api to a new object. */
      let newData = sessions?.map((session) => {
           return {
                day: session.day,

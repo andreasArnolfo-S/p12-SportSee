@@ -4,8 +4,8 @@ import Router from './views/route';
 function App() {
   return (
     <div className="App">
-    <Router />
-  </div>
+      <Router />
+    </div>
   );
 }
 
