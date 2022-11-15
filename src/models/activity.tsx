@@ -8,14 +8,11 @@ const Activity = () => {
      const data: ApiResponseActivity = useGetActivities(`http://localhost:3000/user/${userId}/activity`);
 
      const sessions  = data.sessions;
+     
 
      /* Mapping the data from the api to a new object. */
      let newData = sessions?.map((session) => {
-          return {
-               day: session.day,
-               kilogram: session.kilogram,
-               calories: session.calories
-          }
+          return {...session, formateday: (new Date(session.day)).getDate()};
      });
 
      return newData;

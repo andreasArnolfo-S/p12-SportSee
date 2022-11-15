@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import styles from './activityChart.module.css';
 import {
   BarChart,
   CartesianGrid,
@@ -26,7 +25,7 @@ const ActivityChart: FC<ActivityChartProps> = () => {
         data={activities}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey='day' />
+        <XAxis dataKey='formateday' />
         <YAxis dataKey='calories' orientation='left' visibility='hidden' />
         <YAxis dataKey="kilogram" orientation='right' yAxisId={'right'} />
 
@@ -34,8 +33,6 @@ const ActivityChart: FC<ActivityChartProps> = () => {
         <Legend />
         <Bar dataKey="kilogram" fill="#282D30" background={{ fill: '#eee' }} radius={[10, 10, 0, 0]} yAxisId={'right'} />
         <Bar dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} />
-
-
       </BarChart>
     </ResponsiveContainer>
   );

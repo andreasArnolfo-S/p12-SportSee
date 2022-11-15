@@ -13,7 +13,7 @@ const PerformanceChart: FC<PerformanceChartProps> = () => {
     <RadarChart
       cx="50%"
       cy="50%"
-      outerRadius="60%"
+      outerRadius="50%"
       data={data}
       className={styles.chartContainer}	
     >
@@ -21,7 +21,7 @@ const PerformanceChart: FC<PerformanceChartProps> = () => {
       <PolarAngleAxis
         stroke="white"
         dataKey="kind"
-        tick={{ fontSize: '15px' }}
+        tick={{ fontSize: '10px' }}
         tickLine={false}
       />
       <Radar
