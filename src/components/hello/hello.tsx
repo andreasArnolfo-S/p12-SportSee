@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import User from '../../models/user';
+import { User } from '../../models/models';
 import styles from './hello.module.css';
 
 interface HelloProps { }

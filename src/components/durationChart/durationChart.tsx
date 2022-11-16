@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './durationChart.module.css';
-import Duration from './../../models/duration';
+import { Duration } from './../../models/models';
 import {
   XAxis,
   Tooltip,

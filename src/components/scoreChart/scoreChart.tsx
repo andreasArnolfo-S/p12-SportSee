@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
   PolarAngleAxis,
 } from 'recharts';
-import Score from './../../models/score';
+import { Score } from './../../models/models';
 
 interface ScoreChartProps {
 }
@@ -35,7 +35,7 @@ const ScoreChart: FC<ScoreChartProps> = () => {
       >
         <PolarAngleAxis
           type="number"
-          domain={[0, 100]}
+          domain={[0, 1]}
           angleAxisId={0}
           tick={false}
         />

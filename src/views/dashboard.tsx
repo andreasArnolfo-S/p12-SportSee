@@ -5,7 +5,7 @@ import styles from './dashboard.module.css';
 import DurationChart from './../components/durationChart/durationChart';
 import Sidebar from './../components/sidebar/sidebar';
 import PerformanceChart from '../components/performanceChart/performanceChart';
-import KeyData from './../models/keyData';
+import { KeyData } from './../models/models';
 import Card from './../components/card/card';
 import { FaFire, FaDrumstickBite, FaApple, FaHamburger } from 'react-icons/fa';
 import ScoreChart from './../components/scoreChart/scoreChart';

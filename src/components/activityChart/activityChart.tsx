@@ -9,12 +9,12 @@ import {
   ResponsiveContainer,
   Legend
 } from "recharts";
-import Activity from '../../models/activity';
+import { Activity }from '../../models/models';
 
 interface ActivityChartProps {
 }
 
-const ActivityChart: FC<ActivityChartProps> = () => {
+const ActivityChart: FC<ActivityChartProps> =  () => {
   const activities = Activity();
   return (
     <ResponsiveContainer width="100%" height="100%" >
