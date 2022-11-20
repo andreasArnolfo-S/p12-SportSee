@@ -56,7 +56,7 @@ const ScoreChart: FC<ScoreChartProps> = () => {
           dominantBaseline="middle"
           className={styles.value}
         >
-          {`${score}`}%
+          {`${score * 100}`}%
         </text>
         <text
           x="50%"
