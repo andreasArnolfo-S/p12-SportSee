@@ -33,7 +33,7 @@ const DurationChart: FC<DurationChartProps> = () => {
             dataKey="day"
             axisLine={false}
             tickLine={false}
-            tick={{ fontSize: '10px', fill: 'white' }}
+            tick={{ fontSize: '15px', fill: 'white', fontWeight: 'bold' }}
             dy={10}
           />
           <YAxis hide={true} domain={['dataMin - 10', 'dataMax + 10']} dataKey="sessionLength" />
