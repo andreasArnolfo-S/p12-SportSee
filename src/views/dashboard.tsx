@@ -31,6 +31,7 @@ const dashboard = () => {
                               </div>
                               <div className={styles.div2}>
                                    <DurationChart />
+                                   <div className={styles.overlay}></div>
                               </div>
                               <div className={styles.div3}>
                                    <PerformanceChart />

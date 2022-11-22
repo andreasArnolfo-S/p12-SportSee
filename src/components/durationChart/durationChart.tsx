@@ -61,7 +61,6 @@ const DurationChart: FC<DurationChartProps> = () => {
         </LineChart>
 
       </ResponsiveContainer>
-      
 
   );
 }
