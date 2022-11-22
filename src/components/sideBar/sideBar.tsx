@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import styles from './sidebar.module.css';
 import { GiMeditation } from "react-icons/gi";
+import { BiSwim, BiDumbbell } from "react-icons/bi";
+import { MdDirectionsBike } from "react-icons/md";
 
 interface SidebarProps {}
 
@@ -11,13 +13,13 @@ const Sidebar: FC<SidebarProps> = () => (
         <GiMeditation />
       </div>
       <div className={styles.SideMenuIcon}>
-        <GiMeditation />
+      <BiSwim />
       </div>
       <div className={styles.SideMenuIcon}>
-        <GiMeditation />
+        <MdDirectionsBike />
       </div>
       <div className={styles.SideMenuIcon}>
-        <GiMeditation />
+        <BiDumbbell />
       </div>
     </div>
     <p className={styles.copyRight}>Copyright, SportSee 2020</p>

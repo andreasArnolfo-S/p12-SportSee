@@ -8,8 +8,10 @@ import { useState, useEffect } from "react";
  * @returns The data object.
  */
 export const useApi = (url: string) => {
+     /* It's a hook that allows you to add React state to function components. */
      const [data, setData] = useState<any>({});
 
+     /* It's a hook that runs after the component is rendered. */
      useEffect(() => {
           axios.get(url).then((response) => {
                setData(response.data);
