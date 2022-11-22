@@ -1,3 +1,15 @@
 .chartContainer {
-     background-color: #FBFBFB;
+	background-color: #fbfbfb;
+}
+.label {
+	fill: #20253a;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.tooltip {
+	background-color: red;
+	padding: 10px;
+	font-size: 14px;
+     color: #fbfbfb;
 }

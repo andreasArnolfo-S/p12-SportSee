@@ -17,3 +17,9 @@
      background-color: black;
      border-radius: 15px;
 }
+.tooltip {
+     background-color: #fff;
+     padding: 10px;
+     font-size: 14px;
+     color: black;
+}

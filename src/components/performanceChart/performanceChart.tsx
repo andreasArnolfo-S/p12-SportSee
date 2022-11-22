@@ -20,7 +20,7 @@ const PerformanceChart = () => {
         <PolarAngleAxis
           stroke="white"
           dataKey="kindFrench"
-          tick={{ fontSize: '10px' }}
+          tick={{ fontSize: '15px', fill: 'white', fontWeight: 'bold' }}
           tickLine={false}
         />
         <Radar
