@@ -1,6 +1,4 @@
-/**
- * Types of API responses for every endpoint.
- */
+
 export type ApiResponseActivity = {
 
      userId: number;

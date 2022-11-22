@@ -1,11 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useApi } from './../api/api';
 
-/**
- * It takes an array of objects, and returns a new array of objects with a new key/value pair added to
- * each object.
- * @returns An array of objects.
- */
+
 export const Performances = () => {
      const userId = useParams().id;
      const data = useApi(`http://localhost:3000/user/${userId}/performance`);
@@ -13,7 +9,7 @@ export const Performances = () => {
      const performance = data.data?.data;
      const subject = data.data?.kind
 
-     const translate: any = (item: any) => {
+     const translate: any = (item: string) => {
           switch (item) {
                case 'cardio':
                     return 'Cardio';
@@ -44,10 +40,7 @@ export const Performances = () => {
      return newData
 }
 
-/**
- * I'm trying to map the data from the api to a new object.
- * @returns An array of objects.
- */
+
 export const Activity = () => {
      const userId = useParams().id;
      const data = useApi(`http://localhost:3000/user/${userId}/activity`);
@@ -64,21 +57,13 @@ export const Activity = () => {
 
 };
 
-/**
- * It takes a number and returns a string
- * @returns An array of objects.
- */
+
 export const Duration =  () => {
      const userId = useParams().id;
      const data =  useApi(`http://localhost:3000/user/${userId}/average-sessions`);
 
      const sessions = data.data?.sessions;
 
-     /**
-      * It takes a number and returns a string.
-      * @param {number} item - number - the number to be translated
-      * @returns The function translate is being returned.
-      */
      const translate: any = (item: number) => {
           switch (item) {
                case 1:
@@ -100,7 +85,6 @@ export const Duration =  () => {
           }
      };
 
-     /* Mapping the data from the API to a new array. */
      let newData = sessions?.map((session: any) => {
           return {
                day: translate(session.day),
@@ -112,11 +96,7 @@ export const Duration =  () => {
 
 };
 
-/**
- * It's a React component that returns the keyData property of the data object returned by the useApi
- * hook.
- * @returns The key is being returned.
- */
+
 export const KeyData = () => {
      const userId = useParams().id;
      const data = useApi(`http://localhost:3000/user/${userId}`);
@@ -127,10 +107,7 @@ export const KeyData = () => {
      return key;
 };
 
-/**
- * It's getting the id from the url and then it's getting the data from the api.
- * @returns The score.
- */
+
 export const Score = () => {
      /* It's getting the id from the url. */
      const userId = useParams().id;
@@ -143,11 +120,7 @@ export const Score = () => {
 
 }
 
-/**
- * It's a React component that uses the useParams hook to get the userId from the URL, then uses the
- * useApi hook to fetch the user data from the API, and finally returns the userInfos from the data.
- * @returns The data from the API call.
- */
+
 export const User = () => {
      const userId = useParams().id;
      const data = useApi(`http://localhost:3000/user/${userId}`);

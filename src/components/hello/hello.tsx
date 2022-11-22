@@ -1,10 +1,8 @@
-import React, { FC } from 'react';
 import { User } from '../../models/models';
 import styles from './hello.module.css';
 
-interface HelloProps { }
 
-const Hello: FC<HelloProps> = () => {
+const Hello = () => {
   const info = User();
   
   return (

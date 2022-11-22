@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import styles from './scoreChart.module.css';
 import {
   RadialBarChart,
@@ -8,10 +7,8 @@ import {
 } from 'recharts';
 import { Score } from './../../models/models';
 
-interface ScoreChartProps {
-}
 
-const ScoreChart: FC<ScoreChartProps> = () => {
+const ScoreChart = () => {
   const score = Score();
 
   const data = [

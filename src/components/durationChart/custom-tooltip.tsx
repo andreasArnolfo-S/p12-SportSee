@@ -4,21 +4,7 @@ export type AverageSessionsCustomTooltipProps = {
      payload?: any;
 };
 
-/**
-* Custom Recharts tooltip for the average sessions graph.
-*
-* @type {React.FC<AverageSessionsCustomTooltipProps>}
-* @param {AverageSessionsCustomTooltipProps} props
-* @return {JSX.Element} JSX element
-*
-* @example
-* import { Tooltip } from 'recharts';
-*
-* <Tooltip
-*   content={AverageSessionsCustomTooltip as any}
-*   wrapperStyle={{ outline: 'none' }}
-* />
-*/
+
 export function AverageSessionsCustomTooltip({ active, payload }: AverageSessionsCustomTooltipProps) {
      return (
           active && (

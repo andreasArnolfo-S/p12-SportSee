@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './card.module.css';
+
 
 
 interface CardProps {
@@ -11,11 +12,12 @@ interface CardProps {
   color?: string;
 }
 
+
 const Card: FC<CardProps> = (props) => {
 
   return (
     <div className={styles.Card}>
-      <div className={styles.icon} style={{backgroundColor: `${props.bgColor}`, color: `${props.color}`}}>
+      <div className={styles.icon} style={{ backgroundColor: `${props.bgColor}`, color: `${props.color}` }}>
         {props.icon}
       </div>
       <div>

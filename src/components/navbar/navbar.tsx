@@ -1,11 +1,9 @@
-import React, { FC } from 'react';
 import styles from './navbar.module.css';
 import { FaRunning } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
-interface NavbarProps {}
 
-const Navbar: FC<NavbarProps> = () => (
+const Navbar = () => (
   <nav className={styles.Navbar}>
     <div className={styles.logo}>
       <div className={styles.redCircle}>

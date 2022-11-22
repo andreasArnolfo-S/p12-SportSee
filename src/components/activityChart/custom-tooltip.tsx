@@ -5,13 +5,6 @@ export type ActivityCustomTooltipProps = {
   payload?: any;
 };
 
-/**
- * Custom Recharts tooltip for the activity graph.
- *
- * @type {React.FC<ActivityCustomTooltipProps>}
- * @param {ActivityCustomTooltipProps} props
- * @return {JSX.Element} JSX element
- */
 export function ActivityCustomTooltip ({ active, payload }: ActivityCustomTooltipProps) {
   if (active && payload && payload.length) {
     return (
