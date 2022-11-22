@@ -11,15 +11,6 @@ export type ActivityCustomTooltipProps = {
  * @type {React.FC<ActivityCustomTooltipProps>}
  * @param {ActivityCustomTooltipProps} props
  * @return {JSX.Element} JSX element
- *
- * @example
- * import { Tooltip } from 'recharts';
- *
- * <Tooltip
- *   content={ActivityCustomTooltip as any}
- *   wrapperStyle={{ outline: 'none' }}
- *   cursor={{ fill: 'gray', opacity: 0.1 }}
- * />
  */
 export function ActivityCustomTooltip ({ active, payload }: ActivityCustomTooltipProps) {
   if (active && payload && payload.length) {

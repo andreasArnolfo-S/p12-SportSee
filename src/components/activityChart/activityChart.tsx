@@ -43,7 +43,24 @@ const ActivityChart =  () => {
         >
           Activité quotidienne
         </text>
-        <Legend />
+        <Legend
+          align="right"
+          verticalAlign="top"
+          height={80}
+          wrapperStyle={{
+            top: 15,
+            right: 20,
+            fontSize: 11,
+          }}
+          iconSize={12}
+          iconType="circle"
+          formatter={(value) => {
+            if (value === 'calories') {
+              return `Calories brûlées (kCal)`;
+            }
+            return `Poids (kg)`;
+          }}
+        />
         <Bar dataKey="kilogram" fill="#282D30" background={{ fill: '#eee' }} radius={[10, 10, 0, 0]} yAxisId={'right'} />
         <Bar dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} />
       </BarChart>

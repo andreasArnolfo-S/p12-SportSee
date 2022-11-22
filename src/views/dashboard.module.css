@@ -20,7 +20,7 @@
 	grid-column-gap: 30px;
 	grid-row-gap: 30px;
 	margin: 1rem;
-	height: 80vh;
+	height: 90vh;
 }
 
 .div1 {
@@ -48,6 +48,31 @@
 .div8 {
 	grid-area: 1 / 4 / 2 / 5;
 }
+.div1:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div2:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div3:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div4:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div5:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div6:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div7:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+.div8:hover {
+	border: 1px solid rgb(179, 62, 247);
+}
+
 
 .overlay {
 	position: absolute;
@@ -58,4 +83,59 @@
 	background-color: black;
 	opacity: 0.3;
 	border-radius: 0 15px 15px 0;
+}
+
+@media (max-width: 1200px) {
+
+	.chartSection {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	.div1 {
+		width: 100%;
+		height: 400px;
+		grid-area: none;
+	}
+	.div2 {
+		width: 100%;
+		height: 400px;
+		grid-area: none;
+
+	}
+	.div3 {
+		width: 100%;
+		height: 400px;
+		grid-area: none;
+
+	}
+	.div4 {
+		width: 100%;
+		height: 400px;
+		grid-area: none;
+
+	}
+	.div5 {
+		width: 100%;
+		grid-area: none;
+
+	}
+	.div6 {
+		width: 100%;
+		grid-area: none;
+
+	}
+	.div7 {
+		width: 100%;
+		grid-area: none;
+
+	}
+	.div8 {
+		width: 100%;
+		grid-area: none;
+
+	}
+
+
+	
 }
