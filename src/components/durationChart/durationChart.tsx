@@ -12,6 +12,10 @@ import { AverageSessionsCustomTooltip } from './custom-tooltip';
 
 
 
+/**
+ * It returns a ResponsiveContainer component, which contains a LineChart component.
+ * @returns {JSX.Element} A line chart.
+ */
 const DurationChart = () => {
   const duration = Duration();
 

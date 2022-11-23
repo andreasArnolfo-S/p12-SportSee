@@ -1,4 +1,7 @@
-import { FC } from 'react';
+/**
+ * @file ActivityChart.tsx is a component.
+ * @author Arnolfo andreas
+ */
 import {
   BarChart,
   CartesianGrid,
@@ -9,12 +12,18 @@ import {
   ResponsiveContainer,
   Legend
 } from "recharts";
-import { Activity }from '../../models/models';
+import { Activity } from '../../models/models';
 import { ActivityCustomTooltip } from './custom-tooltip';
 import styles from './activityChart.module.css';
 
 
-const ActivityChart =  () => {
+/** A function that returns a bar chart. 
+ * @returns {JSX.Element} A bar chart.
+*/
+const ActivityChart = () => {
+  /** Calling the Activity function from the models.ts file. 
+  * @type {Array}
+  */
   const activities = Activity();
   return (
     <ResponsiveContainer width="100%" height="100%" >

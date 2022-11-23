@@ -4,6 +4,12 @@ import { Performances } from '../../models/models';
 
 
 
+/**
+ * It returns a RadarChart component from the Recharts library, which is a ResponsiveContainer
+ * component that contains a RadarChart component that contains a PolarGrid component, a PolarAngleAxis
+ * component, and a Radar component
+ * @returns {JSX.Element} A radar chart.
+ */
 const PerformanceChart = () => {
 
   const data = Performances();

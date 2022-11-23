@@ -12,6 +12,7 @@ import ScoreChart from './../components/scoreChart/scoreChart';
 
 
 
+/* A function that returns a JSX element. */
 const dashboard = () => {
 
      const keyData = KeyData();
