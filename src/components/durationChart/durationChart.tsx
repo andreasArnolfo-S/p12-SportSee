@@ -13,8 +13,13 @@ import { AverageSessionsCustomTooltip } from './custom-tooltip';
 
 
 /**
- * It returns a ResponsiveContainer component, which contains a LineChart component.
+ * It's function that returns a line chart for the average duration of the user's sessions.
+ * @function DurationChart
+ * @see https://recharts.org/en-US/examples/LineChartWithReferenceLines
  * @returns {JSX.Element} A line chart.
+ * @example
+ * // call the function
+ * <DurationChart />
  */
 const DurationChart = () => {
   const duration = Duration();

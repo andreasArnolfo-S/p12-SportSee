@@ -9,9 +9,13 @@ import { Score } from './../../models/models';
 
 
 /**
- * It returns a RadialBarChart component, which is a React wrapper for the
- * recharts library. It contains a ResponsiveContainer component that contains a RadialBarChart
+ * The today's score chart - It returns a RadialBarChart component.
+ * @function ScoreChart
+ * @see https://recharts.org/en-US/examples/RadialBarChart
  * @returns {JSX.Element} A radial bar chart.
+ * @example
+ * // call the function
+ * <ScoreChart />
  */
 const ScoreChart = () => {
   const score = Score();

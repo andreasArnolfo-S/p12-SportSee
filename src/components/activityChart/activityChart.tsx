@@ -17,8 +17,13 @@ import { ActivityCustomTooltip } from './custom-tooltip';
 import styles from './activityChart.module.css';
 
 
-/** A function that returns a bar chart. 
+/** it's a function that returns a bar chart for the user's activity. 
+ * @function ActivityChart
+ * @see https://recharts.org/en-US/examples/BarChartWithCustomizedLabel 
  * @returns {JSX.Element} A bar chart.
+ * @example
+ * // call the function
+ * <ActivityChart />
 */
 const ActivityChart = () => {
   /** Calling the Activity function from the models.ts file. 
