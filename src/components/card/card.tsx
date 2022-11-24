@@ -3,10 +3,12 @@ import styles from './card.module.css';
 
 
 /**
- * @prop {number} value value to display
- * @prop {string} unit unit (g, kCal, etc.)
+ * CardProps is an interface with properties title, value, unit, icon, bgColor and color.
+ * @typedef CardProps
+ * @prop {number} value value to display on card
+ * @prop {string} unit unit of value (g, kCal, etc.)
  * @prop {string} title title of card
- * @prop {JSX.Element} icon icon to display
+ * @prop {JSX.Element} icon icon to display on card
  * @prop {string} bgColor background color of icon
  * @prop {string} color color of icon
  */
