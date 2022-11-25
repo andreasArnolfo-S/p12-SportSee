@@ -1,12 +1,15 @@
 import { useParams } from 'react-router-dom';
 import { useApi } from './../api/api';
-
+/**
+ * @file Models
+ */
 
 /**
- * It's a function that fetches the user's data from the API and returns it but with a new format.
  * @function Performances
  * 
  * @returns {Array} A array with the user's performances.
+ * @description It's a function that fetches the user's data from the API and returns it but with a new format.
+ * this function is used in the performanceChart component.
  * @example
  * // call the function for get the performances
  * Performances()
@@ -87,20 +90,21 @@ export const Performances = () => {
 
 
 /**
- * It's a function that fetches data (activity) from an API and returns the data in a new format.
  * @function Activity
  * @returns {array} a new array.
+ * @description It's a function that fetches data (activity) from an API and returns the data in a new format.
+ * this function is used in the activityChart component.
  * @example
  * // call the function for get the activities
  * Activity()
  * // example of the return
  * [
- * 0 :{
- * day: "2021-05-01"
- * kilogram: 60
- * calories: 1000
- * formateday: "1"
- * },...
+ *  0 :{
+ *      day: "2021-05-01"
+ *      kilogram: 60
+ *      calories: 1000
+ *      formateday: "1"
+ *   },...
  * ]
  * 
  */
@@ -121,9 +125,10 @@ export const Activity = () => {
 
 
 /**
- * it's function that Transforms the data from an AverageSessions model to a good format
  * @function Duration
  * @returns {array} An array of objects.
+ * @description It's function that Transforms the data from an AverageSessions model to a good format.
+ * this function is used in the durationChart component.
  * @example
  * // call the function for get the duration
  * Duration()
@@ -179,9 +184,10 @@ export const Duration = () => {
 
 
 /**
- * It's a function that returns the keyData.
  * @function KeyData
  * @returns {array} The key is being returned.
+ * @description It's a function that fetches data (keyData) from an API and returns the data in a new format.
+ * this function is used in the dashboard.
  * @example
  * // call the function for get the keyData
  * KeyData()
@@ -197,9 +203,10 @@ export const KeyData = () => {
 
 
 /**
- * It's a function that return a score of user.
  * @function Score
  * @returns {number} The score of user.
+ * @description It's a function that fetches data (score) from an API and returns the data in a new format.
+ * this function is used in the scoreChart component.
  * @example
  * // call the function for get the score
  * Score()
@@ -216,10 +223,11 @@ export const Score = () => {
 }
 
 
-/**
- * It's a function that return the user's data.
+/** 
  * @function User
  * @returns {Array} The data user.
+ * @description It's a function that fetches data (user) from an API and returns the data in a new format.
+ * this function is used in the hello component.
  * @example
  * // call the function for get the user
  * User()

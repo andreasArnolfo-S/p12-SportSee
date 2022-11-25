@@ -5,10 +5,10 @@ import { Performances } from '../../models/models';
 
 
 /**
- * It's a function that returns a radar chart for performance of the user.
  * @function PerformanceChart
  * @returns {JSX.Element} A radar chart.
  * @see https://recharts.org/en-US/examples/RadarChartWithPolarGrid
+ * @description It's a function that returns a radar chart for performance of the user.Inside the function, we call the Performances function from the models.ts file for get the data.
  * @example
  * // call the function
  * <PerformanceChart />

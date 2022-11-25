@@ -9,10 +9,10 @@ import { Score } from './../../models/models';
 
 
 /**
- * The today's score chart - It returns a RadialBarChart component.
  * @function ScoreChart
  * @see https://recharts.org/en-US/examples/RadialBarChart
  * @returns {JSX.Element} A radial bar chart.
+ * @description It's a function that returns a radial bar chart for the user's score. Inside the function, we call the Score function from the models.ts file for get the data.
  * @example
  * // call the function
  * <ScoreChart />
