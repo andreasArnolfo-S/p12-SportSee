@@ -26,7 +26,7 @@ interface CardProps {
  * @param {CardProps} props - props of component
  * @returns {JSX.Element} JSX element
  * 
- * @description The card component is a component that takes in props and returns a div with the user's nutritional information.
+ * @description The card is a component that takes in props and returns a div with in the user's nutritional information.
  * @example
  * // call the function
  * <Card value={value} unit={unit} title={title} icon={icon} bgColor={bgColor} color={color} />

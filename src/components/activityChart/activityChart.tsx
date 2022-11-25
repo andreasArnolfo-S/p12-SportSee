@@ -20,7 +20,7 @@ import styles from './activityChart.module.css';
 /**  
  * @function ActivityChart
  * @see https://recharts.org/en-US/examples/BarChartWithCustomizedLabel 
- * @description it's a function that returns a bar chart for the user's activity. Inside the function, we call the Activity function from the models.ts file for get the data.
+ * @description it's a function that return a bar chart for the user's activity. Inside the function, we call the Activity function from the models.ts file for get the data.
  * @returns {JSX.Element} A bar chart.
  * @example
  * // call the function

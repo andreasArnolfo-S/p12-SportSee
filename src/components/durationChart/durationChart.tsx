@@ -15,7 +15,7 @@ import { AverageSessionsCustomTooltip } from './custom-tooltip';
  * @see https://recharts.org/en-US/examples/LineChartWithReferenceLines
  * @returns {JSX.Element} A line chart.
  * 
- * @description It's function that returns a line chart for the average duration of the user's sessions.
+ * @description It's function that return a line chart for the average duration of the user's sessions.
  * Inside the function, we call the Duration function from the models.ts file for get the data.
  * @example
  * // call the function
